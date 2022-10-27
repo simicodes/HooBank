@@ -1,5 +1,5 @@
 import React from "react";
-import { bill  } from "../assets";
+import { apple, bill, google } from "../assets";
 import styles, { layout } from "../style";
 
 const Billing = () => {
@@ -25,6 +25,18 @@ const Billing = () => {
           aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
           placerat.
         </p>
+        <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+          <img
+            src={apple}
+            alt="apple_store"
+            className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer"
+          />
+          <img
+            src={google}
+            alt="google_play"
+            className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer"
+          />
+        </div>
       </div>
     </section>
   );
